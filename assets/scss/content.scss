@@ -3,7 +3,7 @@
 #content {
   position: relative;
   width: calc(100% - #{variables.$sidebar-width});
-  left: 15rem;
+  left: variables.$sidebar-width;
 
   h1 {
     font-size: 3rem;
