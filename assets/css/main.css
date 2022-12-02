@@ -26,6 +26,7 @@
 }
 #sidebar nav {
   margin-left: 2rem;
+  margin-bottom: 7rem;
 }
 #sidebar nav li {
   font-size: 1.5rem;
@@ -35,6 +36,14 @@
 }
 #sidebar nav li .nav-item {
   padding-left: 0.5rem;
+}
+#sidebar p {
+  font-size: 1.5rem;
+  border: black 3px solid;
+  margin: 0 10%;
+  padding: 0.5rem;
+  max-height: 20rem;
+  overflow: scroll;
 }
 #sidebar .external-link {
   font-size: 0.5rem;
