@@ -1,0 +1,57 @@
+#content {
+  position: relative;
+  width: calc(100% - 15rem);
+  left: 15rem;
+}
+#content h1 {
+  font-size: 3rem;
+}
+
+#sidebar {
+  background-color: #f2cc99;
+  width: 15rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 100;
+}
+#sidebar > a {
+  display: flex;
+  justify-content: center;
+}
+#sidebar > a img {
+  width: 100%;
+  margin: 1rem 1rem 2.5rem 1rem;
+}
+#sidebar nav {
+  margin-left: 2rem;
+}
+#sidebar nav li {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#sidebar nav li .nav-item {
+  padding-left: 0.5rem;
+}
+#sidebar li:last-of-type {
+  position: relative;
+}
+#sidebar li:last-of-type .fa-arrow-up-right-from-square {
+  font-size: 0.5rem;
+  position: absolute;
+  margin-left: 0.15rem;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: antiquewhite;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

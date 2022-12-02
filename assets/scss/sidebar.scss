@@ -1,0 +1,44 @@
+@use "variables";
+
+#sidebar {
+  background-color: scale-color(antiquewhite, $lightness: -15%);
+  width: variables.$sidebar-width;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 100;
+
+  > a {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      margin: 1rem 1rem 2.5rem 1rem;
+    }
+  }
+
+  nav {
+    margin-left: 2rem;
+    li {
+      margin-bottom: 1.5rem;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      .nav-item {
+        padding-left: 0.5rem;
+      }
+    }
+  }
+
+  li:last-of-type {
+    position: relative;
+
+    .fa-arrow-up-right-from-square {
+      font-size: 0.5rem;
+      position: absolute;
+      margin-left: 0.15rem;
+    }
+  }
+}
