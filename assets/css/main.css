@@ -4,8 +4,11 @@
   }
 }
 @keyframes slide-in-from-right {
+  from {
+    transform: translateX(calc(17rem + 300px));
+  }
   to {
-    transform: translateX(calc(17rem * -1));
+    transform: translateX(calc(17rem + 275px * -1));
   }
 }
 #content .animation {
@@ -15,7 +18,7 @@
 #content {
   position: relative;
   width: calc(100% - 17rem);
-  left: calc(17rem + 275px);
+  left: calc(17rem);
   transform: translateY(23%);
 }
 #content section {

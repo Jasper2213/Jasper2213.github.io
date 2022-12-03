@@ -3,7 +3,7 @@
 #content {
   position: relative;
   width: calc(100% - #{variables.$sidebar-width});
-  left: calc(#{variables.$sidebar-width} + 275px);
+  left: calc(#{variables.$sidebar-width});
   transform: translateY(23%);
 
   section {

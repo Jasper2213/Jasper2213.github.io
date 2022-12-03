@@ -23,8 +23,12 @@
 }
 
 @keyframes slide-in-from-right {
+  from {
+    transform: translateX(calc(#{variables.$sidebar-width} + 300px));
+  }
+
   to {
-    transform: translateX(calc(#{variables.$sidebar-width} * -1));
+    transform: translateX(calc(#{variables.$sidebar-width} + 275px * -1));
   }
 }
 
