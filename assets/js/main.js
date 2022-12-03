@@ -1,5 +1,7 @@
 "use strict";
 
+import { getKey } from "/config.js"
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
@@ -9,7 +11,7 @@ function init() {
 function getQuoteOfTheDay() {
     fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
         headers: {
-            'X-RapidAPI-Key': "9149905435msha680f530ae4f9e0p1aca94jsn1f4a374fa3d1",
+            'X-RapidAPI-Key': getKey(),
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     })
