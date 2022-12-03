@@ -1,21 +1,21 @@
-@keyframes slide-in-from-right {
-  from {
-    left: calc(17rem + 300px);
-  }
+@keyframes spin {
   to {
-    left: calc(17rem);
+    transform: rotate(360deg);
   }
 }
-h3 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
+@keyframes slide-in-from-right {
+  to {
+    transform: translateX(calc(17rem * -1));
+  }
+}
+#content .animation {
+  animation: 1s slide-in-from-right forwards;
 }
 
 #content {
   position: relative;
   width: calc(100% - 17rem);
-  left: calc(17rem);
+  left: calc(17rem + 275px);
   transform: translateY(23%);
 }
 #content section {
@@ -29,7 +29,7 @@ h3 {
 #content section #about-text {
   width: 75%;
 }
-#content section #about-text p {
+#content section p {
   font-size: 2rem;
   line-height: 120%;
   margin-bottom: 1.5rem;
@@ -104,6 +104,12 @@ h3 {
 body {
   font-family: Tahoma, sans-serif;
   background-color: #faebd7;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 a {

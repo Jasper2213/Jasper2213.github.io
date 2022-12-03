@@ -1,0 +1,33 @@
+@use "variables";
+
+@mixin animation-name($name) {
+  animation-name: $name;
+}
+
+@mixin animation-duration($duration) {
+  animation-duration: $duration;
+}
+
+@mixin animation-timing-function($func) {
+  animation-timing-function: $func;
+}
+
+@mixin animation($name, $duration, $timing-func) {
+  @include animation-name($name);
+  @include animation-duration($duration);
+  @include animation-timing-function($timing-func);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg) }
+}
+
+@keyframes slide-in-from-right {
+  to {
+    transform: translateX(calc(#{variables.$sidebar-width} * -1));
+  }
+}
+
+#content .animation {
+  animation: 1s slide-in-from-right forwards;
+}

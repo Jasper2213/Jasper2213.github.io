@@ -1,25 +1,9 @@
 @use "variables";
 
-@keyframes slide-in-from-right {
-  from {
-    left: calc(#{variables.$sidebar-width} + 300px);
-  }
-
-  to {
-    left: calc(#{variables.$sidebar-width});
-  }
-}
-
-h3 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
 #content {
   position: relative;
   width: calc(100% - #{variables.$sidebar-width});
-  left: calc(#{variables.$sidebar-width});
+  left: calc(#{variables.$sidebar-width} + 275px);
   transform: translateY(23%);
 
   section {
@@ -33,12 +17,12 @@ h3 {
 
     #about-text {
       width: 75%;
+    }
 
-      p {
-        font-size: 2rem;
-        line-height: 120%;
-        margin-bottom: 1.5rem;
-      }
+    p {
+      font-size: 2rem;
+      line-height: 120%;
+      margin-bottom: 1.5rem;
     }
 
     img {
