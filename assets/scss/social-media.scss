@@ -1,0 +1,32 @@
+@use "variables";
+
+#content {
+  #social-media {
+    flex-direction: column;
+
+    &.hidden {
+      display: none;
+    }
+
+    #logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      #row1 {
+        margin: 5rem 0 10rem 0;
+      }
+
+      #row1, #row2 {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      em {
+        font-size: 5rem;
+      }
+    }
+  }
+}

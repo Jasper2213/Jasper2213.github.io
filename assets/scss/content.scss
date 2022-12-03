@@ -1,4 +1,5 @@
 @use "variables";
+@use "social-media";
 
 #content {
   position: relative;
@@ -7,9 +8,9 @@
   transform: translateY(23%);
 
   section {
-    display: flex;
-    align-items: center;
     padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 
     &.hidden {
       display: none;

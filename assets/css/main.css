@@ -15,6 +15,30 @@
   animation: 1s slide-in-from-right forwards;
 }
 
+#content #social-media {
+  flex-direction: column;
+}
+#content #social-media.hidden {
+  display: none;
+}
+#content #social-media #logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#content #social-media #logos #row1 {
+  margin: 5rem 0 10rem 0;
+}
+#content #social-media #logos #row1, #content #social-media #logos #row2 {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+#content #social-media #logos em {
+  font-size: 5rem;
+}
+
 #content {
   position: relative;
   width: calc(100% - 17rem);
@@ -22,9 +46,9 @@
   transform: translateY(23%);
 }
 #content section {
-  display: flex;
-  align-items: center;
   padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 #content section.hidden {
   display: none;

@@ -6,8 +6,6 @@ D
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-H
-assets/scss/sidebar.scss,1\6\160a1a43083c174658f56cf89a5afeb72dc3e78f
 J
 assets/scss/variables.scss,5\a\5a248be1719f6f40a51c0c51b9ca807d340f93c5
 9
