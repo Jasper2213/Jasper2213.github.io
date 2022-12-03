@@ -5,6 +5,9 @@ let key;
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
+    const $sidebarNavItem = document.querySelectorAll("#sidebar nav li");
+    $sidebarNavItem.forEach(item => item.addEventListener("click", itemClicked));
+
     key = await fetch('/config.json')
         .then(res => res.json())
         .then(data => {
@@ -12,6 +15,13 @@ async function init() {
         });
 
     getQuote();
+}
+
+function itemClicked(e) {
+    const $sidebarNavItem = document.querySelectorAll("#sidebar nav li");
+    $sidebarNavItem.forEach(item => item.classList.remove("selected"));
+
+    e.currentTarget.classList.add("selected");
 }
 
 function getQuote() {
