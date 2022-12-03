@@ -1,22 +1,14 @@
 "use strict";
 
-let key;
-
 const $aboutMeSection = document.querySelector("#about");
 const $projectsSection = document.querySelector("#projects");
 const $socialMediaSection = document.querySelector("#social-media");
 
 document.addEventListener("DOMContentLoaded", init);
 
-async function init() {
+function init() {
     const $sidebarNavItem = document.querySelectorAll("#sidebar nav li");
     $sidebarNavItem.forEach(item => item.addEventListener("click", itemClicked));
-
-    key = await fetch('/config.json')
-        .then(res => res.json())
-        .then(data => {
-            return data.key;
-        });
 
     getQuote();
 }
@@ -65,7 +57,7 @@ function showSocialMedia() {
 function getQuote() {
     fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
         headers: {
-            'X-RapidAPI-Key': key,
+            'X-RapidAPI-Key': "c47a3f6b32msh5821ef25f0b9d6ep1e3a44jsn0ebd4f66b9a7", // Can't find a better way of storing API key atm 😒
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     })
