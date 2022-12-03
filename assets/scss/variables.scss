@@ -1,1 +1,5 @@
 $sidebar-width: 17rem;
+
+$body-color: #faebd7;
+$sidebar-color: scale-color($body-color, $lightness: -15%);
+$sidebar-nav-item-selected-color: scale-color($sidebar-color, $lightness: -15%);

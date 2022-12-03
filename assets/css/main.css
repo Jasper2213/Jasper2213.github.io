@@ -1,6 +1,6 @@
 #content {
   position: relative;
-  width: calc(100% - 17rem);
+  width: calc(100% - 17rem - 1rem);
   left: calc(17rem + 1rem);
 }
 #content h1 {
@@ -15,6 +15,13 @@
   top: 0;
   height: 100%;
   z-index: 100;
+  border-right: solid 2px black;
+}
+#sidebar #sidebar-content {
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #sidebar > a {
   display: flex;
@@ -26,13 +33,18 @@
 }
 #sidebar nav {
   margin-left: 2rem;
-  margin-bottom: 7rem;
 }
 #sidebar nav li {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  padding: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
   cursor: pointer;
+}
+#sidebar nav li.selected {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #ecb264;
 }
 #sidebar nav li .nav-item {
   padding-left: 0.5rem;
@@ -40,7 +52,7 @@
 #sidebar #quote {
   font-size: 1.5rem;
   border: black 3px solid;
-  margin: 0 10%;
+  margin: 0 10% 1rem 10%;
   padding: 0.5rem;
   max-height: 20rem;
   overflow: scroll;
@@ -53,14 +65,13 @@
 #sidebar #github {
   width: 17rem;
   font-size: 1.3rem;
-  position: fixed;
   bottom: 1rem;
   text-align: center;
 }
 
 body {
   font-family: Tahoma, sans-serif;
-  background-color: antiquewhite;
+  background-color: #faebd7;
 }
 
 a {

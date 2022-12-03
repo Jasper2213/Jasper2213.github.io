@@ -2,7 +2,7 @@
 
 #content {
   position: relative;
-  width: calc(100% - #{variables.$sidebar-width});
+  width: calc(100% - #{variables.$sidebar-width} - 1rem);
   left: calc(#{variables.$sidebar-width} + 1rem);
 
   h1 {
