@@ -1,17 +1,23 @@
 "use strict";
 
-import { getKey } from "/config.js"
+let key;
 
 document.addEventListener("DOMContentLoaded", init);
 
-function init() {
-    getQuoteOfTheDay();
+async function init() {
+    key = await fetch('/config.json')
+        .then(res => res.json())
+        .then(data => {
+            return data.key;
+        });
+
+    getQuote();
 }
 
-function getQuoteOfTheDay() {
+function getQuote() {
     fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
         headers: {
-            'X-RapidAPI-Key': getKey(),
+            'X-RapidAPI-Key': key,
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     })
