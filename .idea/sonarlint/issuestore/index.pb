@@ -10,3 +10,5 @@ H
 assets/scss/sidebar.scss,1\6\160a1a43083c174658f56cf89a5afeb72dc3e78f
 J
 assets/scss/variables.scss,5\a\5a248be1719f6f40a51c0c51b9ca807d340f93c5
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

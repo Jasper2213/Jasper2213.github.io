@@ -1,27 +1,38 @@
 @use "variables";
 
+@keyframes slide-in-from-right {
+  from {
+    left: calc(#{variables.$sidebar-width} + 300px);
+  }
+
+  to {
+    left: calc(#{variables.$sidebar-width});
+  }
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
 #content {
   position: relative;
   width: calc(100% - #{variables.$sidebar-width});
   left: calc(#{variables.$sidebar-width});
   transform: translateY(23%);
 
-  h3 {
-    font-size: 3rem;
-  }
-
-  #about {
+  section {
     display: flex;
     align-items: center;
     padding: 1.5rem;
 
+    &.hidden {
+      display: none;
+    }
+
     #about-text {
       width: 75%;
-
-      h3 {
-        margin-bottom: 1rem;
-        font-weight: bold;
-      }
 
       p {
         font-size: 2rem;

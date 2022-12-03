@@ -2,6 +2,10 @@
 
 let key;
 
+const $aboutMeSection = document.querySelector("#about");
+const $projectsSection = document.querySelector("#projects");
+const $socialMediaSection = document.querySelector("#social-media");
+
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
@@ -22,6 +26,40 @@ function itemClicked(e) {
     $sidebarNavItem.forEach(item => item.classList.remove("selected"));
 
     e.currentTarget.classList.add("selected");
+
+    switch (e.currentTarget.innerText) {
+        case "About me":
+            console.log("about me clicked")
+            showAboutMe();
+            break;
+
+        case "Projects":
+            showProjects();
+            break;
+
+        case "Social media":
+            showSocialMedia();
+            break;
+    }
+}
+
+function showAboutMe() {
+    $aboutMeSection.classList.remove("hidden");
+    $projectsSection.classList.add("hidden");
+    $socialMediaSection.classList.add("hidden");
+}
+
+function showProjects() {
+    $aboutMeSection.classList.add("hidden");
+    $projectsSection.classList.remove("hidden");
+    $socialMediaSection.classList.add("hidden");
+}
+
+function showSocialMedia() {
+    $aboutMeSection.classList.add("hidden");
+    $projectsSection.classList.add("hidden");
+    $socialMediaSection.classList.remove("hidden");
+
 }
 
 function getQuote() {
