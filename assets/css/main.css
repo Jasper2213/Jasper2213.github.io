@@ -108,6 +108,13 @@
 #sidebar nav li .nav-item {
   padding-left: 0.5rem;
 }
+#sidebar #quoteLocation {
+  display: flex;
+  justify-content: center;
+}
+#sidebar #quoteLocation i {
+  font-size: 2rem;
+}
 #sidebar #quote {
   font-size: 1.5rem;
   border: black 3px solid;

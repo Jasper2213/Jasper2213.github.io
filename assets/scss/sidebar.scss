@@ -49,6 +49,15 @@
     }
   }
 
+  #quoteLocation {
+    display: flex;
+    justify-content: center;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
   #quote {
     font-size: 1.5rem;
     border: black 3px solid;

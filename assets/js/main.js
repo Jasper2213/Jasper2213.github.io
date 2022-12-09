@@ -55,6 +55,9 @@ function showSocialMedia() {
 }
 
 function getQuote() {
+    const $quoteDiv = document.querySelector("div#quoteLocation");
+    $quoteDiv.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
+
     fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
         headers: {
             'X-RapidAPI-Key': "c47a3f6b32msh5821ef25f0b9d6ep1e3a44jsn0ebd4f66b9a7", // Can't find a better way of storing API key atm 😒
@@ -62,12 +65,8 @@ function getQuote() {
         }
     })
         .then(res => res.json())
-        .then(data => showQuote(data.content));
-}
-
-function showQuote(quote) {
-    const $sidebarNav = document.querySelector("#sidebar nav");
-
-    const html = `<p id=quote>${quote}</p>`;
-    $sidebarNav.insertAdjacentHTML("afterend", html)
+        .then(data => {
+            $quoteDiv.innerHTML = "";
+            $quoteDiv.innerHTML = `<p id=quote>${data.content}</p>`;
+        });
 }
