@@ -53,7 +53,7 @@
     display: flex;
     justify-content: center;
 
-    i {
+    em {
       font-size: 2rem;
     }
   }
@@ -68,8 +68,7 @@
   }
 
   .external-link {
-      font-size: 0.5rem;
-      position: absolute;
+      font-size: 1rem;
       margin-left: 0.15rem;
   }
 

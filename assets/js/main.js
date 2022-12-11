@@ -56,7 +56,7 @@ function showSocialMedia() {
 
 function getQuote() {
     const $quoteDiv = document.querySelector("div#quoteLocation");
-    $quoteDiv.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
+    $quoteDiv.innerHTML = `<em class="fas fa-spinner fa-spin"></em>`;
 
     fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
         headers: {
@@ -67,6 +67,6 @@ function getQuote() {
         .then(res => res.json())
         .then(data => {
             $quoteDiv.innerHTML = "";
-            $quoteDiv.innerHTML = `<p id=quote>${data.content}</p>`;
+            $quoteDiv.insertAdjacentHTML("beforeend", `<p id=quote>${data.content}</p>`);
         });
 }
