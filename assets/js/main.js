@@ -21,7 +21,6 @@ function itemClicked(e) {
 
     switch (e.currentTarget.innerText) {
         case "About me":
-            console.log("about me clicked")
             showAboutMe();
             break;
 
@@ -51,7 +50,6 @@ function showProjects() {
 
 function addStylingToCards() {
     document.querySelectorAll(".project").forEach(card => {
-       console.log(card);
     });
 }
 
