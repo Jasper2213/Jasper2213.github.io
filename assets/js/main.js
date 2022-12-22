@@ -45,6 +45,14 @@ function showProjects() {
     $aboutMeSection.classList.add("hidden");
     $projectsSection.classList.remove("hidden");
     $socialMediaSection.classList.add("hidden");
+
+    addStylingToCards();
+}
+
+function addStylingToCards() {
+    document.querySelectorAll(".project").forEach(card => {
+       console.log(card);
+    });
 }
 
 function showSocialMedia() {

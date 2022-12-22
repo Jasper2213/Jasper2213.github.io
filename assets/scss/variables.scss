@@ -1,5 +1,7 @@
 $sidebar-width: 17rem;
 
-$body-color: #faebd7;
-$sidebar-color: scale-color($body-color, $lightness: -15%);
-$sidebar-nav-item-selected-color: scale-color($sidebar-color, $lightness: -15%);
+$body-color: lighten(#328CC1, 20%);
+$sidebar-color: lighten(#0B3C5D, 15%);
+$sidebar-nav-item-selected-color: darken($body-color, 15%);
+$project-card-color: lighten(#1D2731, 10%);
+$project-card-font-color: #F8F0E3;
