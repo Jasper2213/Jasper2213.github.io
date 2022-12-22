@@ -1,4 +1,5 @@
 @use "variables";
+@use "about-me";
 @use "social-media";
 @use "projects";
 
@@ -12,24 +13,10 @@
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &.hidden {
       display: none;
-    }
-
-    #about-text {
-      width: 75%;
-    }
-
-    p {
-      font-size: 2rem;
-      line-height: 120%;
-      margin-bottom: 1.5rem;
-    }
-
-    img {
-      width: 40%;
-      margin-left: 2rem;
     }
   }
 }

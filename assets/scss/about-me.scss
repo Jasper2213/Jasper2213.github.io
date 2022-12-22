@@ -1,0 +1,21 @@
+#about {
+
+  #about-text {
+    width: available;
+    max-width: 55%;
+
+    p {
+      font-size: 2rem;
+      line-height: 120%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  img {
+    margin-left: 2rem;
+    object-fit: contain;
+    width: 40%;
+    min-width: 20rem;
+  }
+}
+

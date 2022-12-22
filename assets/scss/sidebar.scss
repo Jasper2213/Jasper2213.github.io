@@ -9,6 +9,7 @@
   height: 100%;
   z-index: 100;
   border-right: solid 2px black;
+  color: variables.$sidebar-font-color;
 
   #sidebar-content {
     height: 81vh;
@@ -37,6 +38,10 @@
       padding: 1rem;
       cursor: pointer;
       border-radius: 10px;
+
+      a {
+        color: variables.$sidebar-font-color;
+      }
 
       &.selected {
         border: 2px solid black;
@@ -77,5 +82,9 @@
     font-size: 1.3rem;
     bottom: 1rem;
     text-align: center;
+
+    a {
+      color: variables.$sidebar-font-color;
+    }
   }
 }

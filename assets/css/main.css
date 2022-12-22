@@ -1,3 +1,6 @@
+/*****************************************************************/
+/* A huge thank you to Elle for helping me pick the color scheme */
+/*****************************************************************/
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -13,6 +16,22 @@
 }
 #content .animation {
   animation: 1s slide-in-from-right forwards;
+}
+
+#about #about-text {
+  width: available;
+  max-width: 55%;
+}
+#about #about-text p {
+  font-size: 2rem;
+  line-height: 120%;
+  margin-bottom: 1.5rem;
+}
+#about img {
+  margin-left: 2rem;
+  object-fit: contain;
+  width: 40%;
+  min-width: 20rem;
 }
 
 #content #social-media {
@@ -51,7 +70,7 @@
 #projects #projects-container .project {
   width: 30%;
   height: 20rem;
-  background-color: #304151;
+  background-color: #3E424b;
   padding: 1rem;
   border-radius: 7px;
   position: relative;
@@ -98,25 +117,14 @@
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #content section.hidden {
   display: none;
 }
-#content section #about-text {
-  width: 75%;
-}
-#content section p {
-  font-size: 2rem;
-  line-height: 120%;
-  margin-bottom: 1.5rem;
-}
-#content section img {
-  width: 40%;
-  margin-left: 2rem;
-}
 
 #sidebar {
-  background-color: #1368a1;
+  background-color: #4b6043;
   width: 17rem;
   position: fixed;
   left: 0;
@@ -124,6 +132,7 @@
   height: 100%;
   z-index: 100;
   border-right: solid 2px black;
+  color: #F8F0E3;
 }
 #sidebar #sidebar-content {
   height: 81vh;
@@ -150,9 +159,12 @@
   cursor: pointer;
   border-radius: 10px;
 }
+#sidebar nav li a {
+  color: #F8F0E3;
+}
 #sidebar nav li.selected {
   border: 2px solid black;
-  background-color: #3f99cd;
+  background-color: #9fc581;
 }
 #sidebar nav li .nav-item {
   padding-left: 0.5rem;
@@ -182,10 +194,13 @@
   bottom: 1rem;
   text-align: center;
 }
+#sidebar #github a {
+  color: #F8F0E3;
+}
 
 body {
   font-family: Tahoma, sans-serif;
-  background-color: #7cb9dd;
+  background-color: #c7ddb5;
 }
 
 h3 {
